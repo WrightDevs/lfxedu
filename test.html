@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFX Academia - Master Your Exams with Confidence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  #particles-js {
+    position: fixed; /* Ensure the particles stay fixed in the background */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Send the particles to the background */
+    pointer-events: none; /* Prevent the particles from interfering with user interaction */
+}
+</style>
+<body>
+    <div id="particles-js"></div> <!-- Particle container -->
+
+    <header>
+        <!-- your header content here -->
+    </header>
+
+    <main>
+        <!-- your main content here -->
+    </main>
+
+    <footer>
+        <!-- your footer content here -->
+    </footer>
+
+    <!-- Load the necessary libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Your custom JavaScript -->
+    <script>
+        // Initialize particles.js with connected particles
+        particlesJS('particles-js', {
+            particles: {
+                number: { 
+                    value: 200, // Increase number of particles
+                    density: { enable: true, value_area: 800 } // Increase density for more particles
+                },
+                color: { value: '#ffffff' }, // White color for particles
+                shape: {
+                    type: 'circle', // Circle shape for particles
+                    stroke: {
+                        width: 0, // No stroke around particles
+                        color: '#000000' // Stroke color (if any)
+                    }
+                },
+                opacity: {
+                    value: 0.8, // Make particles more visible
+                    random: true, // Make opacity random
+                    anim: {
+                        enable: true,
+                        speed: 1,
+                        opacity_min: 0.3, // Minimum opacity during animation
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 5, // Larger size for particles
+                    random: true, // Random particle sizes
+                    anim: {
+                        enable: true,
+                        speed: 4,
+                        size_min: 1, // Minimum size during animation
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true, // Enable lines connecting particles
+                    distance: 150, // Max distance between connected particles
+                    color: '#ffffff', // Color of the lines
+                    opacity: 0.5, // Opacity of the lines
+                    width: 1 // Width of the lines
+                },
+                move: {
+                    enable: true, // Enable particle movement
+                    speed: 3, // Movement speed
+                    direction: 'random', // Random movement direction
+                    random: true, // Randomize particle movement
+                    straight: false, // Allow random direction change
+                    out_mode: 'out', // Keep particles within bounds
+                    bounce: false // Disable bounce when particles hit edges
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse' // Repulsion effect on hover
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push' // Push particles on click
+                    },
+                    resize: true
+                }
+            },
+            retina_detect: true // Make the particles responsive for retina displays
+        });
+    </script>
+</body>
+</html>
