@@ -46,6 +46,7 @@ nav {
     font-weight: 600;
     color: #00ffcc;
     letter-spacing: 3px;
+    z-index: 1;
 }
 
 nav ul {
@@ -323,10 +324,9 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #00ffcc;
     color: white;
     padding: 12px 24px;
-    border-radius: 50px;
+    border-radius: 50%;
     cursor: pointer;
     font-weight: bold;
     z-index: 1000;
